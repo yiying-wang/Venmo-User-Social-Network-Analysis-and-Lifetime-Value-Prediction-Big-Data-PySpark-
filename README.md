@@ -22,9 +22,7 @@ Friends of friends are defined as other users who had transactions with the user
  We successfully identified users’ friends as well as friends of friends. Then, we calculated the clustering coefficient and the PageRank to better capture their social network.
 The Clustering Coefficient measures how connected a vertex’s neighbor is to one another. In other words, if your friends all know each other, you have a high clustering coefficient. More specifically, it is calculated as the number of edges connecting a vertex’s neighbors divided by the total number of possible edges between the vertex’s neighbors. We calculated the clustering coefficient as friends count divided by the friends of friends count.
 
-The PageRank is best known as the core metric behind Google’s search engine. It includes three distinct factors, the number of vertices that link to the target, the PageRank centrality of the
- 
-linking vertices, and the link propensity of the linking vertices. In other words, your PageRank will increase if you have more friends, if your friends have high PageRank, and your friends do not have many other friends. We used GraphX to calculate the PageRank.
+The PageRank is best known as the core metric behind Google’s search engine. It includes three distinct factors, the number of vertices that link to the target, the PageRank centrality of the linking vertices, and the link propensity of the linking vertices. In other words, your PageRank will increase if you have more friends, if your friends have high PageRank, and your friends do not have many other friends. We used GraphX to calculate the PageRank.
 
 ### Predictive Analytics
 One of the biggest questions in Customer Relationship Management (CRM) is to predict the number of future transactions. We predicted the total number of transactions a user will have by the end of their first year in Venmo based on transaction dataset as well as text and social network analytics above.
